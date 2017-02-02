@@ -14,7 +14,7 @@ def handle_error():
         print(e)
 
 
-def do_work(m_list):
+def do_work(m_list, handle_success, handle_error):
     counter = 0
     for i in range(len(m_list)):
         while i < len(m_list)-1:
@@ -33,6 +33,6 @@ def do_work(m_list):
 good_list = [1, 2, 3, 4]
 bad_list = [1, 3, 2, 4]
 print('~~~~~~~~~~~~~~~~~~~~\nВызываем отсортированый список\nРезультат: ')
-do_work(good_list)
+do_work(good_list, handle_success, handle_error)
 print('~~~~~~~~~~~~~~~~~~~~\nВызываем кривой список\nРезультат: ')
-do_work(bad_list)
+do_work(bad_list, handle_success, handle_error)
