@@ -1,6 +1,6 @@
 # Функция принимает значение и обрабатывает три исключения: ValueError, TypeError или RuntimeError
 
-l = [None]
+l = []
 
 def random_exc():
     import random
