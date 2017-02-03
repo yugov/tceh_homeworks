@@ -1,9 +1,9 @@
 # Функция принимает значение и обрабатывает три исключения: ValueError, TypeError или RuntimeError
+import random
 
 l = []
 
 def random_exc():
-    import random
     errors = (ValueError, TypeError, RuntimeError)    # Потому что я могу
     errors_callers = ('string', 0, '1')
     my_var = random.choice(errors_callers)
