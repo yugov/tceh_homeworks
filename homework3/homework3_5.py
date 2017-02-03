@@ -14,7 +14,7 @@ def handle_error():
         print(e)
 
 
-def do_work(m_list, handle_success, handle_error):
+def do_work(m_list, success_callback, error_callback):
     counter = 0
     for i in range(len(m_list)):
         while i < len(m_list)-1:
@@ -25,9 +25,9 @@ def do_work(m_list, handle_success, handle_error):
         counter += 1
 
     if counter == len(m_list):
-        handle_success()
+        success_callback()
     else:
-        handle_error()
+        error_callback()
 
 
 good_list = [1, 2, 3, 4]
