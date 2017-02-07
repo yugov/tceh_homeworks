@@ -3,10 +3,10 @@
 
 class Human(object):
     def is_dangerous(self, animal):
-        if animal.dng is False:
-            print('Животноене опасно')
-        else:
+        if animal.dng:
             print('Животное опасно')
+        else:
+            print('Животное не опасно')
 
 
 class Animal(object):  # Не опасны
