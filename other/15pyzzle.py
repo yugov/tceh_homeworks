@@ -1,6 +1,5 @@
 import random
 
-
 # Empty tile, there's only one empty cell on a field:
 EMPTY_MARK = 'x'
 
