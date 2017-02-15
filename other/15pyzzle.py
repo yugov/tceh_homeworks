@@ -1,6 +1,5 @@
 import random
 
-
 # Empty tile, there's only one empty cell on a field:
 EMPTY_MARK = 'x'
 
@@ -15,11 +14,6 @@ MOVES = {
 
 
 def shuffle_field():
-    """
-    This method is used to create a field at the very start of the game.
-    :return: list with 16 randomly shuffled tiles,
-    one of which is a empty space.
-    """
     field = list(range(1, 17))
     field[-1] = EMPTY_MARK
     random.shuffle(field)
@@ -112,7 +106,7 @@ def main():
         except IndexError as ex:
             print(ex)
         except KeyboardInterrupt:
-            print('Shutting dowwn.')
+            print('Shutting down.')
             quit()
     print('You have completed the game in {} steps.'.format(steps))
 
