@@ -3,7 +3,6 @@
 def antidef(my_function):
     def delfunc(*args):
         print(str(my_function.__name__), 'не будет вызвана')
-
     return delfunc
 
 
