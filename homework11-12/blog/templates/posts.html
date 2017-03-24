@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Посты </title>
+</head>
+<body>
+{% for post in posts %}
+<p>Заголовок поста:{{ post.title }} <br>
+    Автор:{{ post.user.name }} {{ post.user.email }}
+    Дата:{{ post.date }}
+    Содержание:{{ post.content }}
+    Видимость: {{ post.visible }}
+</p>
+{% endfor %}
+
+
+</body>
+</html>

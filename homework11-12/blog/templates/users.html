@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Зарегестрированные пользователи </title>
+</head>
+<body>
+{% for user in users %}
+<p>Имя пользователя:{{ user.name }} {{ user.id }} <br>
+    E-mail:{{ user.email }}</p>
+{% endfor %}
+
+
+</body>
+</html>
