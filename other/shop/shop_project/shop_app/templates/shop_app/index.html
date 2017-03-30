@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All visits</title>
+</head>
+<body>
+	<ul>
+		{% for url in urls %}
+			<li>Url: {{ url.url }} Count: {{ url.id__count }}</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
